@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace HomeWork
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Game game = new Game("Lin", "Female", 30, 80, 80, 80);
+
+            while (game.isRunning)
+            {
+                game.Loop();
+            }
+        }
+    }
+}
